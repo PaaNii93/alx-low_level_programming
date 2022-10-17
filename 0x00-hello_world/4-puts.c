@@ -1,9 +1,12 @@
 #include <stdio.h>
 
 /**
- *Comments come here
+ * main -Entry point
  *
-*/
+ * Description: Programmimg with C
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
