@@ -5,7 +5,7 @@
  *
  * Description: print all possible combs of two-didgit numbers.
  *
- * Return 0 (success)
+ * Return: 0 (success)
  **/
 
 int main(void)
