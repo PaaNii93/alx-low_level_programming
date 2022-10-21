@@ -1,7 +1,9 @@
 #include "main.h"
 
-/*
- * print_alphabet_x10 - print a-z 10x.
+/**
+ * print_alphabet_x10 - entry point.
+ *
+ * Description: print a-z 10x.
  *
  * Return: 0 (success)
  **/
