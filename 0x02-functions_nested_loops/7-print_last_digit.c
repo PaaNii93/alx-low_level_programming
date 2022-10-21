@@ -7,14 +7,14 @@
  * Return: the last digit.
  **/
 
-int print_last_digit(int n)
+int print_last_digit(int a)
 {
-	if (n >= 0 && n <= 9)
-		return (n);
+	if (a >= 0 && a <= 9)
+		return (a);
 
 	else
 	{
-		n = _abs(n % 10);
-		return (n);
+		a = _abs(n % 10);
+		return (a);
 	}
 }
