@@ -1,21 +1,21 @@
 #include "main.h"
 
 /**
- * print_last_digit - entry point.
+ * _abs - entry point.
  * Description: prints the last digits of any number.
  * @n: int value.
  * Return: the last digit.
  **/
 
-int print_last_digit(int a)
+int _abs(int n)
 
 {
-	if (a >= 0 && a <= 9)
-		return (a);
+	if (n >= 0 && n <= 9)
+		return (n);
 
 	else
 	{
-		a = _abs(n % 10);
-		return (a);
+		n = _abs(n % 10);
+		return (n);
 	}
 }
