@@ -2,10 +2,11 @@
 #include "main.h"
 
 /**
- * _strlen - functions returns length of a string
- * @s: pointer for counting length of string
+ * _strlen - Function for counting the length of string
+ * @s: a pointer for counting the strting lenth
+ * Author: Sammykingx
  * Return: int i
- */
+*/
 
 int _strlen(char *s)
 {
@@ -13,7 +14,7 @@ int _strlen(char *s)
 
 	while (s[i] != '\0')
 	{
-		i++
+		i++;
 	}
 
 	return (i);
