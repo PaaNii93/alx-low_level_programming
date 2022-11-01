@@ -1,20 +1,24 @@
-#include <stdio>
 #include "main.h"
-
+#include <string.h>
 /**
- * *_strcat - concantenate strings.
+ * _strcat - function that append strings
+ * @dest: destination string
+ * @src: source string
+ * Return: dest
  */
 
-void char *_strcat(char *dest, char *src)
+char *_strcat(char *dest, char *src)
 {
-	s1[] = char *dest
-	s2[] = char *src
-	int i;
-	int j;
+	int l1, l2, i;
 
-	for (i = 0, s1[i] != '\0', i++);
-	for (j = 0, s2[j] != '\0', j++);
+	dest = "dest";
+	src = "src";
+
+	l1 = strlen(dest);
+	l2 = strlen(src);
+	for (i = 0; i <= l2, i++;)
 	{
-		s1[i] = s2[j];
+		dest[l1 + i] = src[i];
 	}
-	s1[i] = '\0';
+	return (dest);
+}
