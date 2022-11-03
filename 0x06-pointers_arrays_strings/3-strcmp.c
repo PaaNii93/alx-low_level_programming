@@ -3,9 +3,9 @@
 
 /**
  * _strcmp - function compares two strings.
- * @s1: string1
- * @s2: string2
- * Return: 0
+ * @s1: string 1
+ * @s2: string 1
+ * Return: 0.
  */
 
 int _strcmp(char *s1, char *s2)
