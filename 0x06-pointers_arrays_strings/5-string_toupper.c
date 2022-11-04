@@ -7,8 +7,14 @@
  * Return: 0
  */
 
-char *string_toupper(char *)
-}
-	string_touper;
-	return (0);
+char *string_toupper(char *a)
+{
+	int i;
+
+	for (i = 0; i != '\0'; i++)
+	{
+		if (a[1] > 96 && a[1] < 123)
+			a[1] -= 32;
+	}
+	return (a);
 }
