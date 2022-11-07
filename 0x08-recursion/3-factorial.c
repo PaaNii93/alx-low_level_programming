@@ -9,10 +9,10 @@ int factorial(int n)
 {
 	int i;
 
-	i = n * factorial(n - 1);
 	if (n < 0)
 		return (-1);
 	else if (n < 2)
 		return (n);
-	return (*i);
+	i = n * factorial(n - 1);
+	return (i);
 }
