@@ -12,5 +12,7 @@ int factorial(int n)
 	i = n * factorial(n - 1);
 	if (n < 0)
 		return (-1);
-	return (i);
+	else if (n < 2)
+		return (n);
+	return (*i);
 }
