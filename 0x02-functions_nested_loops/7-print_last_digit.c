@@ -14,8 +14,9 @@ int print_last_digit(int a)
 	}
 	else
 	{
-		printf("%d",abs(a % 10));
+		printf("%d", abs(a % 10));
 	}
 	putchar ('\n');
-	return (0);
+	
+	return 0;
 }
