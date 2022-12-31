@@ -1,8 +1,8 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * print_last_digit - prints the last digits of any number
  * @a: the int value to be acted upon
- * author: sammykingx
  * Return: returns the last digit to calling function
 */
 int print_last_digit(int a)
@@ -12,7 +12,7 @@ int print_last_digit(int a)
 
 	else
 	{
-		a = _abs(a % 10);
+		a = abs(a % 10);
 		return (a);
 	}
 }
