@@ -8,13 +8,15 @@
 */
 int print_last_digit(int a)
 {
+
 	if (a >= 0 && a <= 9)
 	{
 		printf("%d", a);
 	}
 	else
 	{
-		printf("%d", abs(a % 10));
+		a = abs(a % 10);
+		printf("%d", a);
 	}
 	putchar ('\n');
 	
