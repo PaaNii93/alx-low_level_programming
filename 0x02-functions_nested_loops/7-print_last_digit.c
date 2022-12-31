@@ -9,12 +9,14 @@
 int print_last_digit(int a)
 {
 	if (a >= 0 && a <= 9)
+	{
 		putchar (a);
+	}
 	else
 	{
 		a = abs(a % 10);
 		putchar (a);
 	}
 	putchar ('\n');
-	return 0;
+	return (a);
 }
