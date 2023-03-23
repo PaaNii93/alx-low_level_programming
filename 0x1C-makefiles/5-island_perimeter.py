@@ -1,38 +1,34 @@
 #!/usr/bin/python3
-"""
-The perimeter of the island
-"""
+"""gets perimeter of island"""
 
 
 def island_perimeter(grid):
-    """
-    Function that calculate the perimeter of the island
-    described in grid.
-    Args:
-       grid: Matrix that emulate the island grid.
-    Return:
-       Returns the perimeter of the island described in grid.
-    """
+    """actual function"""
     count = 0
-    connection_h = 0
-    connection_v = 0
-    # Count horizontal connection of numbers 1
-    for _list in grid:
-        i = 1
-        for number in _list:
-            if number == 1:
-                count += 1
-                if i < len(_list) and number == _list[i]:
-                    connection_h += 1
-            i += 1
-    # Count vertical connection of numbers 1
-    for index, _list in enumerate(grid):
-        for i in range(0, len(_list)):
-            if index < len(grid) - 1:
-                if _list[i] == 1 and _list[i] == grid[index + 1][i]:
-                    connection_v += 1
-    total = count * 4
-    horizontal = connection_h * 2
-    vertical = connection_v * 2
-    perimeter = total - horizontal - vertical
-    return perimeter
+    if grid:
+        glen = len(grid)
+        rlen = len(grid[0])
+        for idx1, row in enumerate(grid):
+            for idx2, spot in enumerate(row):
+                if spot:
+                    if idx1 == 0:
+                        count += 1
+                    else:
+                        if not grid[idx1 - 1][idx2]:
+                            count += 1
+                    if idx1 >= glen - 1:
+                        count += 1
+                    else:
+                        if not grid[idx1 + 1][idx2]:
+                            count += 1
+                    if idx2 == 0:
+                        count += 1
+                    else:
+                        if not row[idx2 - 1]:
+                            count += 1
+                    if idx2 >= rlen - 1:
+                        count += 1
+                    else:
+                        if not row[idx2 + 1]:
+                            count += 1
+    return count
