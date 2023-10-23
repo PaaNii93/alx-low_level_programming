@@ -6,14 +6,20 @@
  * Return: 1(when n is a prime number), else 0
  */
 
-int _is_prime_number(int n)
-{
-	int i;
+int is_prime_number(int n);
 
-	i = (2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43,\
-			47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97);
-	if (n != i)
-		return (0);
-	else
-		return (1);
+int is_prime_number(int n)
+{
+    if(n < 0 || n == 1){
+        return 0;
+    }
+    if(n == 2 || n == 3 || n == 5){
+        return 1;
+    }
+    if(n%2 == 0 || n%3 == 0 || n%5 == 0){
+        return 0;
+    }
+    else{
+        return 1;
+    }
 }
